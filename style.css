@@ -53,7 +53,6 @@ header {
   background-color: #ff385c;
   padding: 15px;
   text-align: center;
-  display: flex;
 }
 
 .logo {
@@ -90,7 +89,7 @@ header nav ul li a:hover {
 form {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 15px;
   border: 2px solid #ff385c;
 }
@@ -161,7 +160,7 @@ footer p {
   }
 
   .form .item {
-    flex: 1;
+    flex: 1 1 auto;
     display: flex block;
     flex-direction: column;
   }
