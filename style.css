@@ -1,3 +1,5 @@
+/* -------  General Styles ------- */
+
 body {
   font-family: "Lato", sans-serif;
 }
@@ -44,20 +46,21 @@ main img {
   margin: 10px;
 }
 
-.about {
+.item-double {
   flex: 2;
 }
 
 /* -------  Navigation ------- */
+
 header {
   background-color: #ff385c;
-  padding: 15px;
+  padding: 10px;
   text-align: center;
 }
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 55px;
+  font-size: 50px;
   color: #fff;
 }
 
@@ -88,21 +91,22 @@ header nav ul li a:hover {
 /* -------  Search Form ------- */
 form {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 15px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
   border: 2px solid #ff385c;
+  padding: 10px;
 }
 
 form label {
   font-weight: bold;
+  width: 50px;
 }
 
 form select,
 form input {
   margin-bottom: 20px;
-  width: 70%;
-  float: right;
+  width: 85%;
 }
 
 form button {
@@ -123,7 +127,7 @@ footer {
 footer p {
   color: #fff;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
 }
 
 /* -------  Media Query ------- */
@@ -137,38 +141,39 @@ footer p {
   }
 
   header nav {
-    padding: 15px;
+    padding: 10px;
   }
 
   form {
     flex-direction: row;
   }
-  button {
-    text-align: center;
-  }
-
-  .logo {
-    font-size: 80px;
-  }
 
   .group {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-flow: row nowrap;
     align-items: center;
   }
 
-  .form .item {
-    flex: 1 1 auto;
+  .vacation-form .item {
     display: flex block;
+    flex: 1 1 auto;
     flex-direction: column;
   }
 
   .item label,
-  .item select,
-  .item input {
+  .item input,
+  .item select {
+    display: flex;
     width: 100%;
+  }
+
+  .grid-column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 10px;
   }
 
   .grid-row {
@@ -176,11 +181,7 @@ footer p {
     flex: 1;
     flex-direction: row;
   }
-
-  .grid-column {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    margin: 15px;
+  button {
+    text-align: center;
   }
 }
